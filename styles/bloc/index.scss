@@ -1,0 +1,85 @@
+
+body{
+        main{
+            .bloc-contenue{
+              margin-left: 233px;
+              padding-left: 25px;
+            }
+          .nom-prenom{
+              text-align: center;
+              font-family: 'Segoe UI', 
+              Tahoma, Geneva, Verdana, sans-serif;
+              color: rgb(48, 11, 11);
+              font-size: 45px;
+              @include responsive("mobile"){
+                font-size: 20px;
+                height:15vh;
+              }
+          }
+          .experience{
+              text-align: center;
+          }
+          .compétence{
+          text-align: center;
+          }
+          .apropos{
+              text-align: center;
+          }
+          input{
+            width: 300px;
+            height: 10vh;
+            
+          }
+          button{
+              width: 90px;
+              margin-left: 80%;
+              margin-top: 10px;
+              background-color: rgb(82, 82, 116);
+              padding: 10px;
+              border: none;
+              border-radius: 20px;
+              &:hover{
+                  border: 2px solid gray;
+                  padding: 8px;
+                  color: white;
+                  transition: .1s;
+              }
+              @include responsive("mobile"){
+                  margin-left: 0;
+              }
+          }
+          .sou-entete{
+              justify-content: center;
+              @include responsive ("mobile"){
+                  flex-direction: column;
+                  width: 20px;
+              }
+          }
+          .fa-phone{
+              border-radius: 50%;
+              padding: 7px;
+              color: green;
+              font-size: 40px;
+              @include responsive ("mobile"){
+                font-size: 30px;
+              }
+          }
+          .fa-envelope{
+             @extend .fa-phone;
+              color: green;
+              font-size: 40px;
+              @include responsive ("mobile"){
+                font-size: 30px;
+              }
+          }
+          .fa-map-marker-alt{
+              @extend .fa-phone;
+              color: green;
+              font-size: 40px;
+              @include responsive("mobile"){
+                font-size:30px ;
+              }
+          }
+    }
+ 
+}

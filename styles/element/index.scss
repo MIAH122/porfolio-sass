@@ -1,0 +1,60 @@
+.bloc-navigation{
+    .profil{
+        background-color:rosybrown;
+        position: fixed;
+        width: 233px;
+        height: auto;
+        top:0 ;
+        left: 0;
+        @include responsive ("mobile"){
+            margin: 10px;
+            padding: 15px;
+            width: 150px;
+               }
+         }
+    img{
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+        border: 2px solid white;
+        border-radius: 50%;
+        @include responsive ("mobile"){
+            width: 120px;
+            height: 120px;
+            right: 5rem;
+        }
+    }
+    li{
+        list-style-type: none;
+      }
+    .option{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        line-height: 4rem;
+        height: 100vh;
+    }
+    .fa-instagram{
+          border-radius: 50%;
+          padding: 7px;
+          color: rgb(128, 0, 111);
+          font-size: 50px;
+          @include responsive ("mobile"){
+            font-size: 30px;
+          }
+      }
+  .fa-facebook{
+      @extend .fa-instagram;
+      color:rgb(76, 76, 212);
+      @include responsive ("mobile"){
+        font-size: 30px;
+      }
+  }
+  .fa-youtube{
+      @extend .fa-instagram;
+      color: red;
+      @include responsive ("mobile"){
+        font-size: 30px;
+      }
+}
+}
